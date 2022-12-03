@@ -1,0 +1,161 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: C-codes
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/tilla/Documents/GitHub/C-codes/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target binarysearch.h
+
+
+#############################################
+# Order-only phony target for binarysearch.h
+
+build cmake_object_order_depends_target_binarysearch.h: phony || CMakeFiles/binarysearch.h.dir
+
+build CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o: CXX_COMPILER__binarysearch.2eh_Debug /Users/tilla/Documents/GitHub/C-codes/binarysearch.cpp || cmake_object_order_depends_target_binarysearch.h
+  DEP_FILE = CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -I/Users/tilla/Documents/GitHub/C-codes/C-codes
+  OBJECT_DIR = CMakeFiles/binarysearch.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarysearch.h.dir
+
+build CMakeFiles/binarysearch.h.dir/calculate_power.cpp.o: CXX_COMPILER__binarysearch.2eh_Debug /Users/tilla/Documents/GitHub/C-codes/calculate_power.cpp || cmake_object_order_depends_target_binarysearch.h
+  DEP_FILE = CMakeFiles/binarysearch.h.dir/calculate_power.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -I/Users/tilla/Documents/GitHub/C-codes/C-codes
+  OBJECT_DIR = CMakeFiles/binarysearch.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarysearch.h.dir
+
+build CMakeFiles/binarysearch.h.dir/leetcode_puzzles.cpp.o: CXX_COMPILER__binarysearch.2eh_Debug /Users/tilla/Documents/GitHub/C-codes/leetcode_puzzles.cpp || cmake_object_order_depends_target_binarysearch.h
+  DEP_FILE = CMakeFiles/binarysearch.h.dir/leetcode_puzzles.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -I/Users/tilla/Documents/GitHub/C-codes/C-codes
+  OBJECT_DIR = CMakeFiles/binarysearch.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarysearch.h.dir
+
+build CMakeFiles/binarysearch.h.dir/main.cpp.o: CXX_COMPILER__binarysearch.2eh_Debug /Users/tilla/Documents/GitHub/C-codes/main.cpp || cmake_object_order_depends_target_binarysearch.h
+  DEP_FILE = CMakeFiles/binarysearch.h.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -I/Users/tilla/Documents/GitHub/C-codes/C-codes
+  OBJECT_DIR = CMakeFiles/binarysearch.h.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarysearch.h.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target binarysearch.h
+
+
+#############################################
+# Link the executable binarysearch.h
+
+build binarysearch.h: CXX_EXECUTABLE_LINKER__binarysearch.2eh_Debug CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o CMakeFiles/binarysearch.h.dir/calculate_power.cpp.o CMakeFiles/binarysearch.h.dir/leetcode_puzzles.cpp.o CMakeFiles/binarysearch.h.dir/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/binarysearch.h.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = binarysearch.h
+  TARGET_PDB = binarysearch.h.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tilla/Documents/GitHub/C-codes/cmake-build-debug && /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tilla/Documents/GitHub/C-codes/cmake-build-debug && /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/tilla/Documents/GitHub/C-codes -B/Users/tilla/Documents/GitHub/C-codes/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tilla/Documents/GitHub/C-codes/cmake-build-debug
+
+build all: phony binarysearch.h
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /private/var/folders/r6/24nnghp15mz4t8glvblbs5rh0000gn/T/AppTranslocation/CEF48A7E-8111-4639-85B9-CFB62BD5196F/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

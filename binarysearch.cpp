@@ -28,7 +28,7 @@ void binary_search() {
   size_t size;
   cout << "Please insert array size: ";
   cin >> size;
-  cout << "Please insert array with " << size << "index: " ;
+  cout << "Please insert array with " << size << " indexes: " ;
   for(int i{0};i<size;i++){
       cin >> array[i];
   }
@@ -38,11 +38,12 @@ void binary_search() {
       if (i < size - 1)
           cout << " ";
   }
+  cout << "]" << endl;
   cout << "Please insert number from array for search: ";
   cin >> x;
   int result = binarySearch(array, x, 0, size - 1);
   if (result == -1)
-    printf("Not found");
+    cout << "/nNot found";
   else
-    printf("Element is found at index %d", result);
+    printf("/nElement is found at index %d", result);
 }

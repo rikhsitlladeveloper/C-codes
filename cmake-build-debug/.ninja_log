@@ -1,0 +1,17 @@
+# ninja log v5
+1	311	1670086856780330431	CMakeFiles/binarysearch.cpp.dir/leetcode_puzzles.cpp.o	bbea2e54175b430b
+0	261	1670086949806198061	CMakeFiles/binarysearch.h.dir/main.cpp.o	29d8fd48c1458076
+0	294	1670086856763236756	CMakeFiles/binarysearch.cpp.dir/calculate_power.cpp.o	262cfed27d9914e8
+313	353	1670086904538502241	binarysearch.cpp	8c187bfcf4de7d00
+2	313	1670086904496692471	CMakeFiles/binarysearch.cpp.dir/main.cpp.o	fa79ab2cd460599f
+0	42	1670086952927738552	build.ninja	6b11c5273dbe1648
+0	263	1670086949808258103	CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o	7c8f993534998de1
+0	262	1670086949806850102	CMakeFiles/binarysearch.h.dir/calculate_power.cpp.o	674e066736d2cd63
+0	285	1670086949830497988	CMakeFiles/binarysearch.h.dir/leetcode_puzzles.cpp.o	8c84585c08ed731a
+285	317	1670086949863531587	binarysearch.h	32e5b3b42290c8ca
+2	212	1670087051972993187	CMakeFiles/binarysearch.h.dir/main.cpp.o	29d8fd48c1458076
+212	244	1670087052006777202	binarysearch.h	32e5b3b42290c8ca
+2	340	1670087168708152539	CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o	7c8f993534998de1
+340	380	1670087168750989475	binarysearch.h	32e5b3b42290c8ca
+2	249	1670087236585517517	CMakeFiles/binarysearch.h.dir/binarysearch.cpp.o	7c8f993534998de1
+249	283	1670087236621934023	binarysearch.h	32e5b3b42290c8ca
