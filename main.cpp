@@ -1,8 +1,8 @@
 #include <iostream>
-#include "calculate_power.h"
+#include "binarysearch.h"
 
 using namespace std;
 int main() {
-    calculate_pow();
+    binary_search();
     return 0;
 }
